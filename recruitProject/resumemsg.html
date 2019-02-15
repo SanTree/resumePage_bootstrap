@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <title>申请职位</title>
+    <link rel="stylesheet" href="lib/layui-v2.4.5/layui/css/layui.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/selfpub.css">
+</head>
+<body>
+<div class="box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a href="resumemsg.html" class="list-group-item">简历信息</a>
+                    <a href="resumemsg.html" class="list-group-item active">基本信息</a>
+                    <a href="educationexperience.html" class="list-group-item">教育经历</a>
+                    <a href="jobintention.html" class="list-group-item">求职意向</a>
+                    <a href="projectexperience.html" class="list-group-item">项目经验</a>
+                    <a href="internshipexperience.html" class="list-group-item">实习经验</a>
+                    <a href="winnerexperience.html" class="list-group-item">获奖经历</a>
+                    <a href="selfevaluation.html" class="list-group-item">自我评价</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="page-header">
+                    <h1>基本信息</h1>
+                </div>
+                <span class="pull-right redstrat">（ *为必填项 ）</span>
+                <form action="###"  class="form-inline" role="form">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row selfwidth2">
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="yourname">姓名<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control input-sm selfwidth1" id="yourname" placeholder="请输入姓名"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>性别<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="yoursex" id="sexman" value="man"> 男
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="yoursex" id="sexwoman" value="woman"> 女
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="yourage">年龄<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control input-sm selfwidth1" id="yourage" placeholder="请输入年龄"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="yourcarid">身份证号<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control input-sm selfwidth1" id="yourcarid" placeholder="请输入身份证号"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>出生日期<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select  id="test1" class="form-control input-sm">
+                                            </select >
+                                            <span>年</span>
+                                            <select  id="test2" class="form-control input-sm" >
+                                            </select >
+                                            <span>月</span>
+                                            <select  id="test3" class="form-control input-sm">
+                                            </select >
+                                            <span>日</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>民族<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select  id="nation" class="form-control input-sm selfwidth1">
+                                            </select >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>政治面貌<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select  id="politicaloutlook" class="form-control input-sm selfwidth1">
+                                            </select >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="yourjobdate">参加工作日期<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="layui-input form-control input-sm selfwidth1" id="yourjobdate" placeholder="请选择"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>户口所在地<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select  id="s_province" name="s_province" class="form-control input-sm">
+                                            </select>
+                                            <select  id="s_city" name="s_city" class="form-control input-sm" >
+                                            </select>
+                                            <select  id="s_county" name="s_county" class="form-control input-sm">
+                                            </select>
+                                            <div id="show"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>现居城市<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <select  id="province" name="province" class="form-control input-sm"  onchange="cityName(this.selectedIndex);">
+                                            </select >
+                                            <select  id="city" name="city" class="form-control input-sm" onchange="citychange(this.value);">
+                                            </select >
+                                            <div id="show_a"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="yourtelphone">联系方式<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control input-sm selfwidth1" id="yourtelphone"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label for="youreamai">电子邮箱<span class="redstrat">*</span></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="parentCls">
+                                                <input type="text" name="email" class="form-control  input-sm selfwidth1 inputElem"  mzpmodule="resumeChEnFac" id="youreamai">
+                                            </div>
+                                            <div style="text-align:center; font:normal 14px/24px 'MicroSoft YaHei';"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>婚姻状况</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="yourmarriage" id="notmarriage" value="0"> 未婚
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="yourmarriage" id="hasmarriage" value="1"> 已婚
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="yourmarriage" id="lostmarriage" value="2"> 离异
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label>海外工作/学习经历</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="radio-inline">
+                                                <input type="radio" name="youroverseas" id="hasoverseas" value="0"> 有
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="youroverseas" id="notoverseas" value="1"> 无
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-6 selfsave">
+                                            <button class="btn btn-warning">保存</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 selfup_pic">
+                            <canvas id="cvs"></canvas><br/>
+                            <span class="upload btn btn-warning btn-sm">头像上传<input type="file" class="upload_pic" id="upload" /></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/layui-v2.4.5/layui/layui.all.js"></script>
+<script type="text/javascript" src="js/resumemsg.js"></script>
+<script type="text/javascript" src="js/birthday.js"></script>
+<script type="text/javascript" src="js/area.js"></script>
+<script type="text/javascript" src="js/diqu.js"></script>
+<script type="text/javascript" src="js/LocalStore.js"></script>
+<script type="text/javascript" src="js/mailbox.js"></script>
+<script>
+    /*省市区三级联动开始*/
+    var Gid  = document.getElementById ;
+    var showArea = function(){
+        Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+            Gid('s_city').value + " - 县/区" +
+            Gid('s_county').value + "</h3>"
+    }
+    _init_area();
+    /*省市区三级联动结束*/
+
+
+    /*省市开始*/
+    var showArea = function(){
+        Gid('show_a').innerHTML = "<h3>省" + Gid('province').value + " - 市" +
+            Gid('city').value + " - 县/区"+"</h3>"
+    }
+    _init_area();
+    /*省市结束*/
+
+//    参加工作日期
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        laydate.render({
+            elem: '#yourjobdate'
+            ,type: 'month'
+        });
+
+    })
+
+</script>

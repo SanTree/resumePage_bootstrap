@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <title>申请职位</title>
+    <link rel="stylesheet" href="lib/layui-v2.4.5/layui/css/layui.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/selfpub.css">
+</head>
+<body>
+<div class="box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a href="resumemsg.html" class="list-group-item">简历信息</a>
+                    <a href="resumemsg.html" class="list-group-item">基本信息</a>
+                    <a href="educationexperience.html" class="list-group-item">教育经历</a>
+                    <a href="jobintention.html" class="list-group-item">求职意向</a>
+                    <a href="projectexperience.html" class="list-group-item">项目经验</a>
+                    <a href="internshipexperience.html" class="list-group-item">实习经验</a>
+                    <a href="winnerexperience.html" class="list-group-item active">获奖经历</a>
+                    <a href="selfevaluation.html" class="list-group-item">自我评价</a>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="page-header">
+                    <h1>获奖经历</h1>
+                </div>
+                <span class="pull-right redstrat">（ *为必填项 ）</span>
+                <form action="###"  class="form-inline" role="form">
+                    <div class="row selfwidth2">
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>曾获奖学金级别</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <select  id="scholarship" class="form-control input-sm">
+                                        <option>请选择</option>
+                                        <option>国家级</option>
+                                        <option>省市级</option>
+                                        <option>院校级</option>
+                                    </select >
+                                    <select  id="schooltype" class="form-control input-sm">
+                                        <option>请选择</option>
+                                        <option>一等奖</option>
+                                        <option>二等奖</option>
+                                        <option>三等奖</option>
+                                    </select >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>校内活动/职务描述</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form-control selfwidth1 nodrag" rows="4" id="schooldescript" placeholder="请输入"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="winnerhoner">获得奖项</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control input-sm selfwidth1" id="winnerhoner"  placeholder="请输入"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>奖项级别</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <select  id="honnertype" class="form-control input-sm selfwidth1" placeholder="请选择">
+                                        <option>请选择</option>
+                                        <option>班级级</option>
+                                        <option>院校级</option>
+                                        <option>县市级</option>
+                                        <option>省区级</option>
+                                        <option>国家级</option>
+                                        <option>国际级</option>
+                                    </select >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>获奖时间</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="layui-input form-control input-sm selfwidth1" id="winnerhonertime" placeholder="请选择"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>描述</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea class="form-control selfwidth1 nodrag" rows="4" id="workdescript" placeholder="请输入"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-6 selfsave">
+                                    <button class="btn btn-warning">保存</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-md-10">
+                        <table class="table table-bordered table-hover tabcenter">
+                            <thead>
+                            <tr class="active">
+                                <th>奖项名称</th>
+                                <th>奖项级别</th>
+                                <th>获奖时间</th>
+                                <th>描述</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>某某奖项</td>
+                                <td>院校级</td>
+                                <td>2013-09</td>
+                                <td>描述描述描述描述描述描述</td>
+                                <td><a href="###">编辑</a> | <a href="###">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td>某某奖项</td>
+                                <td>院校级</td>
+                                <td>2013-09</td>
+                                <td>描述描述描述描述描述描述</td>
+                                <td><a href="###">编辑</a> | <a href="###">删除</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/layui-v2.4.5/layui/layui.all.js"></script>
+
+<script>
+    //    项目时间
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        laydate.render({
+            elem: '#winnerhonertime'
+            ,type: 'month'
+        });
+
+    })
+</script>

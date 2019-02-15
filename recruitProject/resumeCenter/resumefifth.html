@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initail-scale=1">
+    <title>简历中心</title>
+    <link rel="stylesheet" href="../lib/layui-v2.4.5/layui/css/layui.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/selfpub.css">
+
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="container">
+        <div class="row">
+            <!--右边切换内容-->
+            <div class="col-md-1"></div>
+            <div class="col-md-10 col-xs-12">
+                <ul class="nav nav-tabs nav-pills" role="tablist">
+                    <li role="presentation"><a href="resumecenter.html">新简历&nbsp;<span class="badge">12</span></a></li>
+                    <li role="presentation"><a href="resumefirst.html">笔试&nbsp;<span class="badge">6</span></a></li>
+                    <li role="presentation"><a href="resumesecond.html">第一轮面试&nbsp;<span class="badge">6</span></a></li>
+                    <li role="presentation"><a href="resumethird.html">第二轮面试&nbsp;</a></li>
+                    <li role="presentation"><a href="resumefourth.html">体检&nbsp;<span class="badge">2</span></a></li>
+                    <li role="presentation" class="active"><a href="resumefifth.html">录用&nbsp;<span class="badge">2</span></a></li>
+                </ul>
+                <div class="input-group col-xs-4 pull-right margininput">
+                    <input type="text" class="form-control input-sm" placeholder="请输入关键字搜索" id="o" onkeyup="autoComplete.start(event)"/>
+                    <div class="auto_hidden" id="auto"></div>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 筛选<span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">性别</a></li>
+                            <li><a href="#">年龄</a></li>
+                            <li><a href="#">学历</a></li>
+                            <!--<li role="separator" class="divider"></li>-->
+                        </ul>
+                    </div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default btn-sm" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+
+                <table class="table table-hover ">
+                    <thead>
+                    <tr class="active">
+                        <th>
+                            <label>
+                                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </label>
+                        </th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                        <th>学历</th>
+                        <th>联系电话</th>
+                        <th>邮箱</th>
+                        <th>求职意向</th>
+                        <th>详情</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </label>
+                        </td>
+                        <th>张三</th>
+                        <td>男</td>
+                        <td>23</td>
+                        <td>本科</td>
+                        <th>12321234345</th>
+                        <th>12345456@163.com</th>
+                        <td>后端开发工程师</td>
+                        <td><span class="glyphicon glyphicon-search"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </label>
+                        </td>
+                        <th>张三</th>
+                        <td>男</td>
+                        <td>23</td>
+                        <td>本科</td>
+                        <th>12321234345</th>
+                        <th>12345456@163.com</th>
+                        <td>后端开发工程师</td>
+                        <td><span class="glyphicon glyphicon-search"></span></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <!--分页-->
+                <div class="pull-right" id="test1"></div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../js/pulldownsearch.js"></script>
+<script type="text/javascript" src="../lib/layui-v2.4.5/layui/layui.all.js"></script>
+<script>
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+        laypage.render({
+            elem: 'test1'
+            ,count: 2
+            ,layout: ['count', 'prev', 'page', 'next', 'limit', 'refresh', 'skip']
+            ,jump: function(obj){
+                console.log(obj)
+            }
+        });
+    });
+
+</script>
+</html>
